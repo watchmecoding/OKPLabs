@@ -4,92 +4,120 @@
 		<meta charset="UTF-8">
         <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
         <meta name = "author" content = "Volnushkin Vitaliy">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>LabTask</title>
 		<style>
 		</style>
 	</head>
-	<body bgcolor="#ffaa00">
-		<a href="../Lab2/Astronaut 1.jpg"><img src="../Lab2/Astronaut 1.jpg" width="20%" height="20%" alt="Astronaut pic 1"></a>
-		<a href="../Lab2/Astronaut 2.jpg"><img src="../Lab2/Astronaut 2.jpg" width="50%" height="50%" alt="Astronaut pic 2"></a>
-		<p>Список відомих космонавтів</p>
-		<ul>
-			<li type="disk">Alan Shepard</li>
-			<li type="circle">Jim Lovell</li>
-			<li type="square">John Glenn</li>
-			<li type="1">Sally Ride</li>
-			<li type="i">Yuri Gagarin</li>
-			<li type="I">Scott Kelly</li>
-			<li type="a">Gus Grissom</li>
-			<li type="A">Deke Slayton</li>
-			<li>No Type</li>
-		</ul>
-		<ol>
-			<li type="disk">May C. Jemison</li>
-			<li type="I">May C. Jemison</li>
-			<li type="a">May C. Jemison</li>
-			<li>No Type</li>
-		</ol>
-		<dl>
-			<dt type="1">Christa McAuliffe</dt>
-			<dd type="i">is a astronaut</dd>
-			<dd type="A">this has</li>
-			<dt>No Type</dt>
-		</dl>
-		<table width="500px" border="1">
-				<caption>NASA Astronauts</caption>
+	<body bgcolor="#ffffff">
+		<table id="NASA" align="center">
+				<caption><font color="black" size="5">NASA Astronauts</font></caption>
 				<tr>
-					<th width="150px" bgcolor="blue"><p><font color="white">Pictures</font></p></th>
-					<th width="35%" bgcolor="blue"><p><font color="white">Profile Links</font></p></th>
-					<th width="35%" bgcolor="blue"><p><font color="white">Name</font></p></th>
+					<th>Pictures</th>
+					<th>Profile Links</th>
+					<th>Name</th>
 				</tr>
 				<tr>
-					<td width="150px"><img src="../Lab2/1.jpg"></td>
-					<td><p align="center"><a href="https://www.nasa.gov/humans-in-space/astronauts/jasmin-moghbeli/">Link to NASA page</a></p></td>
-					<td><p align="center">Jasmin Moghbeli</p></td>
+					<td class="NASA_Left_Cell"><img src="../Lab2/1.jpg"></td>
+					<td class="NASA_Cell_Coloring"><a href="https://www.nasa.gov/humans-in-space/astronauts/jasmin-moghbeli/">Link to NASA page</a></p></td>
+					<td class="NASA_Cell_Coloring">Jasmin Moghbeli</p></td>
 				</tr>
 				<tr>
-					<td width="150px"><img src="../Lab2/2.jpg" width="150px"></td>
-					<td><p align="center"><a href="https://www.nasa.gov/humans-in-space/astronauts/loral-ohara/">Link to NASA page</a></p></td>
-					<td><p align="center">Loral Ohara</p></td>
+					<td class="NASA_Left_Cell"><a href="../Lab2/2.jpg" target="_blank"><img src="../Lab2/2.jpg"></a></td>
+					<td class="NASA_Cell_Coloring"><a href="https://www.nasa.gov/humans-in-space/astronauts/loral-ohara/">Link to NASA page</a></p></td>
+					<td class="NASA_Cell_Coloring">Loral Ohara</p></td>
 				</tr>
-				<tr>
-					<td width="150px"><img src="../Lab2/3.jpg"></td>
-					<td><p align="center"><a href="https://www.nasa.gov/humans-in-space/astronauts/partner-astronauts/">Link to NASA page</a></p></td>
-					<td><p align="center">Partner Cosmonauts</p></td>
+				<tr class="NASA_bottom_border">
+					<td class="NASA_Left_Cell"><img src="../Lab2/3.jpg"></td>
+					<td class="NASA_Cell_Coloring"><a href="https://www.nasa.gov/humans-in-space/astronauts/partner-astronauts/">Link to NASA page</a></p></td>
+					<td class="NASA_Cell_Coloring">Partner Cosmonauts</p></td>
 				</tr>
 			</th>
 		</table>
-		<table cellspacing="10" cellpadding="40" border="1" rules="groups">
+		<table class="Astro_Table" rules="groups">
 			<colgroup>
 				<col style="background-color: lightblue;">
-				<col style="background-color: lightgreen;">
+				<col style="background-color: lightgreen;" width="250px">
+				<col style="background-color: rgb(241, 137, 241);">
+				<col style="background-color: rgb(255, 247, 137);">
 			</colgroup>
-			<colgroup span="2" style="background-color: rgb(241, 137, 241);">
-			<tr>
-				<td rowspan="2">United Rows</td>
-				<td>Cell 1</td>
-				<td>Cell 2</td>
-				<td>Cell 2.1</td>
+			<tr style="background-color: rgb(255, 247, 137);" height="100px">
+				<td colspan="4" align="center"><font color="black" size="10">Список відомих космонавтів</font></td>
+			</tr>
+			<tr class="Astro_Parts_1">
+				<td>Part 1</td>
+				<td>Part 2</td>
+				<td>Part 3</td>
+				<td>Part 4</td>
+			</tr>
+			<tr class="Astro_Parts_2">
+				<td>
+					<ul>
+						<li type="disk">Alan Shepard</li>
+						<li type="disk">Jim Lovell</li>
+						<li type="disk">John Glenn</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li type="a">Sally Ride</li>
+						<li type="a">Yuri Gagarin</li>
+						<li type="a">Scott Kelly</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li type="i">Gus Grissom</li>
+						<li type="i">Deke Slayton</li>
+						<li type="i">Guion Bluford</li>
+					</ul>
+				</td>
+				<td>
+					<ol>
+						<li>Vladimír Remek</li>
+						<li>Buzz Aldrin</li>
+						<li>May C. Jemison</li>
+						<li>Yang Liwei</li>
+					</ol>
+				</td>
 			</tr>
 			<tr>
-				<td>Cell 3</td>
-				<td>Cell 4</td>
-				<td>Cell 4.1</td>
+				<td width="200px">
+					<ul>
+						<li type="square">Georgy Beregovoy</li>
+						<li type="square">Valeri Polyakov</li>
+						<li type="square">Sergei Krikalev</li>
+					</ul>
+				</td>
+				<td rowspan="2">
+					<ul>
+						<li type="A">Dennis Tito</li>
+						<li type="A">Franklin R. Chang-Díaz</li>
+						<li type="A">Vladimír Remek</li>
+					</ul>
+				</td>
+				<td colspan="2" rowspan="2" align="right" valign="middle">
+					<dl>
+						<dt>Anatoly Filipchenko</dt>
+						<dd>is a cosmonaut</dd>
+						<dt>Georgy Shonin</dt>
+						<dd>is a cosmonaut 2</dd>
+					</dl>
+				</td>
 			</tr>
 			<tr>
-				<td colspan="2" align="center">United Columns</td>
-				<td>Cell 6</td>
-				<td>Cell 7</td>
-			</tr>
-			<tr>
-				<td>Cell 8</td>
-				<td>Cell 9</td>
-				<td align="center" VALIGN="top" width="100" height="50">Cell 10</td>
-				<td align="right" VALIGN="bottom" width="100">Cell 11</td>
+				<td>
+					<ul>
+						<li type="circle">Alan Shepard</li>
+						<li type="circle">Jim Lovell</li>
+						<li type="circle">John Glenn</li>
+					</ul>
+				</td>
 			</tr>
 		</table>
-		<MARQUEE behaviour="scroll" direction="Right" loop="infinie"
-		scrollamount="20px" scrolldelay="100" width="100%" height="150px" hspace="0px" vspace="20px">
-				<img src="../Lab2/Rocket.png" width="100px" height="150px">
+		<MARQUEE behaviour="scroll" direction="Right" loop="infinie" scrollamount="20px" scrolldelay="100" width="100%" height="150px" hspace="0px" vspace="20px">
+			<img src="../Lab2/Rocket.png" width="100px" height="150px">
+		</MARQUEE>
+		<a href="../Lab2/Astronaut 1.jpg" target="_blank"><img src="../Lab2/Astronaut 1.jpg" width="100%" height="100%" alt="Astronaut pic 1" align="center"></a>
 	</body>
 </html>
