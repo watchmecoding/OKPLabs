@@ -15,30 +15,52 @@
                 background-repeat: no-repeat;
             }
 
-            h1 {
-                align-content: center;
-                margin-top: 130px;
-                font-size: 100px;
-                text-decoration: none! important;
+            a:link {
+                color: white;
+                text-decoration: none;
             }
 
-            a {
+            a:focus {
+                color: yellow;
+            }
+
+            a:hover {
+                color: yellow;
+            }
+
+            a:visited {
+                color: rgb(235, 131, 12);
+            }
+
+            a:active {
+                border: solid yellow 1px;
+                padding: 5px;
                 color: yellow;
             }
 
             table {
                 margin-top: auto;
             }
+
+            .Main_Text {
+                display: block;
+                color: white;
+                text-align: center;
+                margin-top: 260px;
+                font-size: 120px;
+                font-style: solid;
+            }
+
         </style>
     </head>
-	<body background="../Lab2/Space.jpg" link="#ffffff" alink="blue" vlink="yellow">   
+	<body background="../Lab2 and the rest/Space.jpg">   
         <table align="center" cellspacing="5" cellpadding="10">
             <tr>
-                <td><a href="../Lab2/Article about space.html" target="_blank"><font color="#ffffff" size="4">About space</font></a></td>
+                <td><a href="../Lab2 and the rest/Article about space.html" target="_blank"><font size="4">About space</font></a></td>
                 <td><a href="https://github.com/watchmecoding/OKPLabs" target="_blank"><font size="4">GitHub Repository</font></a></td>
-                <td><a href="../Lab2/LabTask.html" target="_blank"><font color="#ffffff" size="4" target="_blank">Lab Task</font></a></td>
+                <td><a href="../Lab2 and the rest/LabTask.html" target="_blank"><font size="4">Lab Task</font></a></td>
             </tr>
         </table>
-        <h1 align="center"><font color="#ffffff">Welcome to my Universe</font></h1>
+        <span class="Main_Text">Welcome to my Universe</span>
 	</body>
 </html>
